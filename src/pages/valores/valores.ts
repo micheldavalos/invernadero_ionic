@@ -1,9 +1,8 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import {ValoresPage} from "../valores/valores";
 
 /**
- * Generated class for the CultivosPage page.
+ * Generated class for the ValoresPage page.
  *
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
@@ -11,22 +10,16 @@ import {ValoresPage} from "../valores/valores";
 
 @IonicPage()
 @Component({
-  selector: 'page-cultivos',
-  templateUrl: 'cultivos.html',
+  selector: 'page-valores',
+  templateUrl: 'valores.html',
 })
-export class CultivosPage {
-
-  valores = ValoresPage;
+export class ValoresPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad CultivosPage');
-  }
-
-  cambiarValores() {
-    this.navCtrl.push(this.valores);
+    console.log('ionViewDidLoad ValoresPage');
   }
 
 }
