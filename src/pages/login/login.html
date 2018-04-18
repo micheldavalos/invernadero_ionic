@@ -20,15 +20,15 @@
 
     <ion-item>
       <ion-label floating>Username</ion-label>
-      <ion-input type="text"></ion-input>
+      <ion-input [(ngModel)]="usuario" type="text"></ion-input>
     </ion-item>
 
     <ion-item>
       <ion-label floating>Password</ion-label>
-      <ion-input type="password"></ion-input>
+      <ion-input [(ngModel)]="password" type="password"></ion-input>
     </ion-item>
 
   </ion-list>
 
-  <button ion-button full>Iniciar Sesión</button>
+  <button ion-button full (click)="clickBoton()">Iniciar Sesión</button>
 </ion-content>
