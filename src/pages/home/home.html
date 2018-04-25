@@ -7,13 +7,13 @@
 </ion-header>
 
 <ion-content padding>
-  <ion-card>
+  <ion-card *ngFor="let i of invernaderos">
     <ion-item>
       <ion-icon name="information-circle"
                 item-start ></ion-icon>
-      <h2>Nombre del Invernadero</h2>
-      <h3>Dirección</h3>
-      <p>Cantidad de cultivos</p>
+      <h2>{{ i.nombre }}</h2>
+      <h3>{{ i.ubicacion }}</h3>
+      <p>{{ i.cultivos }}</p>
     </ion-item>
   </ion-card>
 </ion-content>
