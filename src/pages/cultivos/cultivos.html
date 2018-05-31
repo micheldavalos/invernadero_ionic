@@ -7,18 +7,19 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>Cultivos</ion-title>
+    <ion-title>{{ invernadero.nombre }}</ion-title>
   </ion-navbar>
 
 </ion-header>
 
 
 <ion-content padding>
-  <ion-card (click)="cambiarCultivos()">
+  <ion-card *ngFor="let c of cultivos" (click)="cambiarCultivos()">
     <ion-item>
       <ion-icon name="leaf"
                 item-start ></ion-icon>
-      <h2>Cultivo</h2>
+      <h2>{{ c.cultivo }}</h2>
+      <p>{{ c.fecha }}</p>
     </ion-item>
   </ion-card>
 </ion-content>
